@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
+body {
+	margin: 0;
+	background-color: #fce2cf;
+	font-family: 'Nunito', sans-serif;
+}
+
+.header {
+	padding: 1rem;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header h1{
+	color: #FD8A8A;
+}
+
+.dark-mode {
+	background: radial-gradient(rgba(128, 128, 128, 0.445) 1px, transparent 1px);
+	background-size : 20px 20px;
+	background-color: #0A2647;
+	transition: all 0.8s;
+}
+
+.dark-mode h1 {
+	color: whitesmoke;
+	transition: all 0.2s;
+}
+
+.dark-mode .note{
+	background: none;
+}
+
+.container {
+    max-width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	min-height: 100vh;
+}
+
+.notes-list {
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(
+		auto-fill,
+		minmax(250px, 1fr)
+	);
+}
+
+.note.new {
+	background-color: #F8EDE3;
+	background: #F8EDE3;
+}
+
+textarea {
+	border: none;
+	resize: none;
+	background-color: #F8EDE3;
+	font-family: inherit;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+.save {
+	background-color: #F8F4EA;
+	border: 1px solid bisque;
+	border-radius: 15px;
+	padding: 5px 10px 5px 10px;
+	font-family: inherit;
+}
+
+.save:hover {
+	cursor: pointer;
+}
+
+.note {
+	background: radial-gradient(rgba(128, 128, 128, 0.445) 1px, transparent 1px);
+   	background-size : 20px 20px;
+	background-color: #FFF6BD;
+	border-radius: 10px;
+	padding: 1rem;
+	min-height: 170px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	white-space: pre-wrap;
+	box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.10);
+}
+
+.note-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.delete-icon {
+	cursor: pointer;
+}
+
+.search {
+	display: flex;
+	align-items: center;
+	background-color: #F8F4EA;
+	border-radius: 10px;
+	padding: 5px;
+	margin-bottom: 1.5em;
+}
+
+.search input {
+	border: none;
+	background-color: #F8F4EA;
+	width: 100%;
+	font-family: inherit;
+}
+
+.search input:focus {
+	outline: none;
+}
